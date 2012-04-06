@@ -1,0 +1,10 @@
+autodetach on
+caption always '%t %= %C %a'
+defutf8 on
+defscrollback 2000
+hardstatus on
+hardstatus alwayslastline "%w"
+startup_message off
+screen -t console
+select 0
+windows
