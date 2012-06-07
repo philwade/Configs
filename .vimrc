@@ -6,3 +6,5 @@ if has('syntax')
 	syntax enable
 	colorscheme solarized
 endif
+"Use set list to see whitespace
+set listchars=eol:$,tab:>.,trail:~,extends:>,precedes:<
