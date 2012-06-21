@@ -23,3 +23,7 @@ autocmd BufWinLeave * call clearmatches()
 " See .vim/ftplugin for more info
 filetype on
 filetype plugin on
+
+" Make a dope/phat statusline that always shows
+set statusline=%t\ %m\ %y\ %=\ [%{&ff}]\ [%c,%l]
+set laststatus=2
