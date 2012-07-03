@@ -3,3 +3,5 @@
 	email = pwade@synacor.com
 [color]
 	ui = true
+[core]
+	pager = less -x4
