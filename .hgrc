@@ -1,0 +1,4 @@
+[ui]
+editor = vim
+username = Phil Wade <phil@philwade.org>
+ignore.other = ~/.hgignore
