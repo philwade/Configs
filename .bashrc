@@ -11,7 +11,16 @@ alias grep="grep -s"
 alias rv="review ticket -t"
 alias ls="ls --color=tty"
 #LS_COLORS="fi=97:di=34:ln=36:ex=32"
-eval `dircolors ~/.dircolors`
+eval `dircolors ~/.dir_colors`
 TERM=xterm-256color
 
-function gu { cd ~/repos && git bulk checkout master && git bulk pull; }
+function gu {
+	if [ -z $1 ]; then
+		REPO="master"
+	else
+		REPO=$1
+	fi
+	cd ~/repos && git bulk checkout $REPO && git bulk pull;
+}
+
+alias gum="gu maintenance_ci"
