@@ -9,3 +9,9 @@ fi
 PS1=" \[\033[0;32m\]\u \[\033[0;31m\]\h \[\033[1;37m\]\W \[\033[1;36m\]\$\[\033[1;37m\] "
 alias grep="grep -s"
 alias rv="review ticket -t"
+alias ls="ls --color=tty"
+#LS_COLORS="fi=97:di=34:ln=36:ex=32"
+eval `dircolors ~/.dircolors`
+TERM=xterm-256color
+
+function gu { cd ~/repos && git bulk checkout master && git bulk pull; }
