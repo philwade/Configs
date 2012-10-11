@@ -19,6 +19,7 @@ if has('syntax')
 	" See .vim/ftplugin for more info
 	filetype on
 	filetype plugin on
+
 endif
 
 
@@ -26,5 +27,5 @@ endif
 set listchars=eol:$,tab:>.,trail:~,extends:>,precedes:<
 
 " Make a dope/phat statusline that always shows
-set statusline=%t\ %m\ %y\ %=\ [%{&ff}]\ [%c,%l]
+set statusline=%t\ %m\ %y\ %=\ [%{getcwd()}]\ [%{&ff}]\ [%c,%l]
 set laststatus=2
