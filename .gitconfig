@@ -5,3 +5,5 @@
 	ui = true
 [core]
 	pager = less -x4
+[alias]
+	logg = log --graph
