@@ -14,7 +14,9 @@ if has('syntax')
 	autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 	autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 	autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-	autocmd BufWinLeave * call clearmatches()
+	if version >= 702
+		autocmd BufWinLeave * call clearmatches()
+	endif
 
 	" Let's find out about custom file types
 	" See .vim/ftplugin for more info
