@@ -14,13 +14,4 @@ alias ls="ls --color=tty"
 eval `dircolors ~/.dir_colors`
 TERM=xterm-256color
 
-function gu {
-	if [ -z $1 ]; then
-		REPO="master"
-	else
-		REPO=$1
-	fi
-	cd ~/repos && git bulk checkout $REPO && git bulk pull;
-}
-
-alias gum="gu maintenance_ci"
+alias ll="ls -la"
